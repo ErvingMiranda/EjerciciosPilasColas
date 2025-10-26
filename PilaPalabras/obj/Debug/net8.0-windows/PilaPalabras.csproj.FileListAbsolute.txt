@@ -1,0 +1,17 @@
+C:\Users\ervin\source\repos\ErvingMiranda\EjerciciosPilasColas\PilaPalabras\bin\Debug\net8.0-windows\PilaPalabras.exe
+C:\Users\ervin\source\repos\ErvingMiranda\EjerciciosPilasColas\PilaPalabras\bin\Debug\net8.0-windows\PilaPalabras.deps.json
+C:\Users\ervin\source\repos\ErvingMiranda\EjerciciosPilasColas\PilaPalabras\bin\Debug\net8.0-windows\PilaPalabras.runtimeconfig.json
+C:\Users\ervin\source\repos\ErvingMiranda\EjerciciosPilasColas\PilaPalabras\bin\Debug\net8.0-windows\PilaPalabras.dll
+C:\Users\ervin\source\repos\ErvingMiranda\EjerciciosPilasColas\PilaPalabras\bin\Debug\net8.0-windows\PilaPalabras.pdb
+C:\Users\ervin\source\repos\ErvingMiranda\EjerciciosPilasColas\PilaPalabras\obj\Debug\net8.0-windows\PilaDePalabras.Form1.resources
+C:\Users\ervin\source\repos\ErvingMiranda\EjerciciosPilasColas\PilaPalabras\obj\Debug\net8.0-windows\PilaPalabras.csproj.GenerateResource.cache
+C:\Users\ervin\source\repos\ErvingMiranda\EjerciciosPilasColas\PilaPalabras\obj\Debug\net8.0-windows\PilaPalabras.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ervin\source\repos\ErvingMiranda\EjerciciosPilasColas\PilaPalabras\obj\Debug\net8.0-windows\PilaPalabras.AssemblyInfoInputs.cache
+C:\Users\ervin\source\repos\ErvingMiranda\EjerciciosPilasColas\PilaPalabras\obj\Debug\net8.0-windows\PilaPalabras.AssemblyInfo.cs
+C:\Users\ervin\source\repos\ErvingMiranda\EjerciciosPilasColas\PilaPalabras\obj\Debug\net8.0-windows\PilaPalabras.csproj.CoreCompileInputs.cache
+C:\Users\ervin\source\repos\ErvingMiranda\EjerciciosPilasColas\PilaPalabras\obj\Debug\net8.0-windows\PilaPalabras.sourcelink.json
+C:\Users\ervin\source\repos\ErvingMiranda\EjerciciosPilasColas\PilaPalabras\obj\Debug\net8.0-windows\PilaPalabras.dll
+C:\Users\ervin\source\repos\ErvingMiranda\EjerciciosPilasColas\PilaPalabras\obj\Debug\net8.0-windows\refint\PilaPalabras.dll
+C:\Users\ervin\source\repos\ErvingMiranda\EjerciciosPilasColas\PilaPalabras\obj\Debug\net8.0-windows\PilaPalabras.pdb
+C:\Users\ervin\source\repos\ErvingMiranda\EjerciciosPilasColas\PilaPalabras\obj\Debug\net8.0-windows\PilaPalabras.genruntimeconfig.cache
+C:\Users\ervin\source\repos\ErvingMiranda\EjerciciosPilasColas\PilaPalabras\obj\Debug\net8.0-windows\ref\PilaPalabras.dll

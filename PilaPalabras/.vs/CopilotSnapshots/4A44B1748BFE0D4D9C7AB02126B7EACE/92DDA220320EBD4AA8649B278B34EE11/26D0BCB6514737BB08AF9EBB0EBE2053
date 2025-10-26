@@ -81,7 +81,7 @@
             this.lblInstruccion.Name = "lblInstruccion";
             this.lblInstruccion.Size = new System.Drawing.Size(355, 19);
             this.lblInstruccion.TabIndex = 1;
-            this.lblInstruccion.Text = "Ingresa una palabra y presiona Agregar:";
+            this.lblInstruccion.Text = "Ingresa una palabra y presiona Agregar (Enter habilitado):";
             // 
             // lblContador
             // 
@@ -182,7 +182,7 @@
             this.lblResultado.Location = new System.Drawing.Point(26, 212);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
-            this.lblResultado.Size = new System.Drawing.Size(708, 226);
+            this.lblResultado.Size = new System.Drawing.Size(708, 180);
             this.lblResultado.TabIndex = 6;
             this.lblResultado.Text = "Resultado (LIFO):\r\n—";
             // 
@@ -190,26 +190,25 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tslHint});
-            this.statusStrip1.Location = new System.Drawing.Point(0,440);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 428);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(760,22);
-            this.statusStrip1.TabIndex =7;
+            this.statusStrip1.Size = new System.Drawing.Size(760, 22);
+            this.statusStrip1.TabIndex = 7;
             this.statusStrip1.Text = "statusStrip1";
-            this.statusStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
             // 
             // tslHint
             // 
             this.tslHint.Name = "tslHint";
-            this.tslHint.Size = new System.Drawing.Size(374,17);
+            this.tslHint.Size = new System.Drawing.Size(364, 17);
             this.tslHint.Text = "Puedes presionar Enter para Agregar. Máximo 5 palabras en la pila.";
             // 
             // Form1
             // 
             this.AcceptButton = this.btnAgregar;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F,15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(760,462);
+            this.ClientSize = new System.Drawing.Size(760, 450);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.btnEnunciado);
@@ -223,7 +222,7 @@
             this.Controls.Add(this.panelHeader);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
             this.MaximizeBox = true;
-            this.MinimumSize = new System.Drawing.Size(700,400);
+            this.MinimumSize = new System.Drawing.Size(700, 400);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ejercicio2 • Pila de Palabras";

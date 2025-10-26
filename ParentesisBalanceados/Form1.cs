@@ -8,6 +8,11 @@ namespace VerificadorParentesis
     {
         private const string EJEMPLO = "(2+3)*(4+(5-1))";
 
+        // Estado para pantalla completa
+        private bool _isFullScreen = false;
+        private FormBorderStyle _prevBorderStyle;
+        private FormWindowState _prevWindowState;
+
         public Form1()
         {
             InitializeComponent();
@@ -15,18 +20,55 @@ namespace VerificadorParentesis
             SetPlaceholderCompat(txtExpresion, EJEMPLO);
             lblResultado.Text = "Resultado...";
             lblResultado.ForeColor = Color.DimGray;
+
+            // Atajos de teclado (F11/Esc) y vista de pantalla completa
+            this.KeyPreview = true;
+            this.KeyDown += Form1_KeyDown;
         }
 
-        // --- Placeholder compatible entre .NET Framework y .NET 6+ ---
+        private void Form1_KeyDown(object? sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F11)
+            {
+                ToggleFullScreen();
+                e.Handled = true;
+            }
+            else if (e.KeyCode == Keys.Escape && _isFullScreen)
+            {
+                ToggleFullScreen();
+                e.Handled = true;
+            }
+        }
+
+        private void ToggleFullScreen()
+        {
+            if (!_isFullScreen)
+            {
+                _prevBorderStyle = this.FormBorderStyle;
+                _prevWindowState = this.WindowState;
+
+                this.FormBorderStyle = FormBorderStyle.None;
+                this.WindowState = FormWindowState.Maximized;
+                _isFullScreen = true;
+            }
+            else
+            {
+                this.FormBorderStyle = _prevBorderStyle;
+                this.WindowState = _prevWindowState;
+                _isFullScreen = false;
+            }
+        }
+
+        // --- Placeholder compatible entre .NET Framework y .NET6+ ---
         [DllImport("user32.dll", CharSet = CharSet.Unicode)]
         private static extern IntPtr SendMessage(IntPtr hWnd, int msg, IntPtr wParam, string lParam);
-        private const int EM_SETCUEBANNER = 0x1501;
+        private const int EM_SETCUEBANNER =0x1501;
 
         private void SetPlaceholderCompat(TextBox tb, string text)
         {
             try
             {
-                // Si el TextBox tiene propiedad PlaceholderText (WinForms .NET 6+)
+                // Si el TextBox tiene propiedad PlaceholderText (WinForms .NET6+)
                 PropertyInfo? p = tb.GetType().GetProperty("PlaceholderText");
                 if (p != null && p.CanWrite)
                 {
@@ -45,7 +87,7 @@ namespace VerificadorParentesis
         private void btnVerificar_Click(object sender, EventArgs e)
         {
             string expresion = txtExpresion.Text?.Trim() ?? string.Empty;
-            if (expresion.Length == 0)
+            if (expresion.Length ==0)
             {
                 MostrarResultado("Ingrese una expresión para verificar.", Color.DarkGoldenrod);
                 return;
@@ -65,7 +107,7 @@ namespace VerificadorParentesis
         private void btnEnunciado_Click(object sender, EventArgs e)
         {
             var sb = new StringBuilder();
-            sb.AppendLine("Ejercicio 3: Verificación de Paréntesis Balanceados");
+            sb.AppendLine("Ejercicio3: Verificación de Paréntesis Balanceados");
             sb.AppendLine("Utilizando el concepto de pila, cree un programa que determine si los paréntesis de una expresión matemática están correctamente balanceados.");
             sb.AppendLine();
             sb.AppendLine("Problema a resolver:");
@@ -119,8 +161,8 @@ namespace VerificadorParentesis
         // --- Lógica de verificación con pila ---
         private bool VerificarParentesis(string expresion, out string detalle)
         {
-            Stack<int> pila = new Stack<int>(); // Índices de '('
-            for (int i = 0; i < expresion.Length; i++)
+            Stack<int> pila = new Stack<int>(); // índices de '('
+            for (int i =0; i < expresion.Length; i++)
             {
                 char c = expresion[i];
                 if (c == '(')
@@ -129,16 +171,16 @@ namespace VerificadorParentesis
                 }
                 else if (c == ')')
                 {
-                    if (pila.Count == 0)
+                    if (pila.Count ==0)
                     {
-                        detalle = $"No balanceada: ')' sin pareja en la posición {i} (índice base 0).";
+                        detalle = $"No balanceada: ')' sin pareja en la posición {i} (índice base0).";
                         return false;
                     }
                     pila.Pop();
                 }
             }
 
-            if (pila.Count == 0)
+            if (pila.Count ==0)
             {
                 detalle = "Balanceada: todos los paréntesis están correctamente emparejados.";
                 return true;
@@ -146,7 +188,7 @@ namespace VerificadorParentesis
             else
             {
                 int primeroSinCerrar = pila.Peek();
-                detalle = $"No balanceada: '(' sin cerrar; por ejemplo, el primero sin pareja está en la posición {primeroSinCerrar} (índice base 0).";
+                detalle = $"No balanceada: '(' sin cerrar; por ejemplo, el primero sin pareja está en la posición {primeroSinCerrar} (índice base0).";
                 return false;
             }
         }

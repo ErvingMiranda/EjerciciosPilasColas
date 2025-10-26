@@ -1,4 +1,4 @@
-using System;
+ï»¿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
@@ -31,7 +31,7 @@ namespace PilaDePalabras
         {
             if (_pila.Count >= MAX)
             {
-                MostrarResultado("La pila ya contiene 5 palabras. Usa 'Mostrar pila' o 'Eliminar última (Pop)'.", Color.DarkGoldenrod);
+                MostrarResultado("La pila ya contiene 5 palabras. Usa 'Mostrar pila' o 'Eliminar Ãºltima (Pop)'.", Color.DarkGoldenrod);
                 return;
             }
 
@@ -47,7 +47,7 @@ namespace PilaDePalabras
             _pila.Push(palabra);
             txtPalabra.Clear();
             txtPalabra.Focus();
-            MostrarResultado($"Se agregó: \"{palabra}\"", Color.DimGray);
+            MostrarResultado($"Se agregÃ³: \"{palabra}\"", Color.DimGray);
             ActualizarUI();
         }
 
@@ -55,7 +55,7 @@ namespace PilaDePalabras
         {
             if (_pila.Count == 0)
             {
-                MostrarResultado("La pila está vacía. Agrega palabras para mostrar el orden inverso.", Color.IndianRed);
+                MostrarResultado("La pila estÃ¡ vacÃ­a. Agrega palabras para mostrar el orden inverso.", Color.IndianRed);
                 return;
             }
 
@@ -66,14 +66,14 @@ namespace PilaDePalabras
         {
             if (_pila.Count == 0)
             {
-                MostrarResultado("La pila está vacía. No hay elementos para eliminar.", Color.IndianRed);
+                MostrarResultado("La pila estÃ¡ vacÃ­a. No hay elementos para eliminar.", Color.IndianRed);
                 return;
             }
 
             string eliminado = _pila.Pop();
-            MostrarResultado($"Se eliminó (Pop): \"{eliminado}\"", Color.DarkSlateBlue);
+            MostrarResultado($"Se eliminÃ³ (Pop): \"{eliminado}\"", Color.DarkSlateBlue);
             ActualizarUI();
-            // opcional: refrescar la vista si ya se había mostrado
+            // opcional: refrescar la vista si ya se habÃ­a mostrado
             RenderResultadoLIFO();
         }
 
@@ -96,8 +96,8 @@ namespace PilaDePalabras
             sb.AppendLine("1) Crear una pila de tipo cadena (string).");
             sb.AppendLine("2) Solicitar al usuario que ingrese cinco palabras.");
             sb.AppendLine("3) Insertar las palabras en la pila una por una.");
-            sb.AppendLine("4) Mostrar las palabras almacenadas en orden inverso (última palabra ingresada, primera mostrada).");
-            sb.AppendLine("5) Mostrar un mensaje si la pila está vacía.");
+            sb.AppendLine("4) Mostrar las palabras almacenadas en orden inverso (Ãºltima palabra ingresada, primera mostrada).");
+            sb.AppendLine("5) Mostrar un mensaje si la pila estÃ¡ vacÃ­a.");
             sb.AppendLine("6) Permitir al usuario eliminar una palabra de la pila y mostrar el resultado final.");
             MessageBox.Show(sb.ToString(), "Enunciado", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -105,17 +105,16 @@ namespace PilaDePalabras
         // --- Utilidades de UI ---
         private void ActualizarUI()
         {
-            lblContador.Text = $"({_pila.Count}/{MAX}) {(_pila.Count < MAX ? "Ingrese palabras" : "Límite alcanzado")}";
+            lblContador.Text = $"({_pila.Count}/{MAX}) {(_pila.Count < MAX ? "Ingrese palabras" : "LÃ­mite alcanzado")}";
 
-            // Mantener Agregar siempre habilitado para poder mostrar el mensaje de límite alcanzado
-            btnAgregar.Enabled = true;
+            // Mantener Agregar siempre habilitado para poder mostrar el mensaje de lÃ­mite alcanzado
             btnMostrar.Enabled = _pila.Count > 0;
             btnPop.Enabled = _pila.Count > 0;
 
             // Pista en el texto de resultado
             if (_pila.Count == 0)
             {
-                lblResultado.Text = "Resultado (LIFO):\r\n—";
+                lblResultado.Text = "Resultado (LIFO):\r\nâ€”";
                 lblResultado.ForeColor = Color.DimGray;
             }
         }
@@ -124,7 +123,7 @@ namespace PilaDePalabras
         {
             if (_pila.Count == 0)
             {
-                lblResultado.Text = "Resultado (LIFO):\r\n—";
+                lblResultado.Text = "Resultado (LIFO):\r\nâ€”";
                 lblResultado.ForeColor = Color.DimGray;
                 return;
             }
@@ -134,7 +133,7 @@ namespace PilaDePalabras
             sb.AppendLine("Resultado (LIFO):");
             for (int i = 0; i < arr.Length; i++)
             {
-                // i+1 muestra numeración, arr[i] es el orden inverso de ingreso
+                // i+1 muestra numeraciÃ³n, arr[i] es el orden inverso de ingreso
                 sb.AppendLine($"{i + 1}) {arr[i]}");
             }
             lblResultado.Text = sb.ToString();

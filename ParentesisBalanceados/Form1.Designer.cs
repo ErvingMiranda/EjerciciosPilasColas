@@ -76,6 +76,8 @@
             // 
             // txtExpresion
             // 
+            this.txtExpresion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.txtExpresion.Font = new System.Drawing.Font("Consolas", 12.5F);
             this.txtExpresion.Location = new System.Drawing.Point(26, 100);
             this.txtExpresion.Name = "txtExpresion";
@@ -88,6 +90,7 @@
             // 
             // btnVerificar
             // 
+            this.btnVerificar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)));
             this.btnVerificar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnVerificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerificar.Font = new System.Drawing.Font("Segoe UI", 10.25F);
@@ -102,6 +105,7 @@
             // 
             // btnEnunciado
             // 
+            this.btnEnunciado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)));
             this.btnEnunciado.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnEnunciado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEnunciado.Font = new System.Drawing.Font("Segoe UI", 10.25F);
@@ -115,6 +119,7 @@
             // 
             // btnLimpiar
             // 
+            this.btnLimpiar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)));
             this.btnLimpiar.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.Font = new System.Drawing.Font("Segoe UI", 10.25F);
@@ -153,8 +158,8 @@
             // tslHint
             // 
             this.tslHint.Name = "tslHint";
-            this.tslHint.Size = new System.Drawing.Size(396, 17);
-            this.tslHint.Text = "Tip: Presiona Tab en la caja de texto (vacía) para autocompletar un ejemplo.";
+            this.tslHint.Size = new System.Drawing.Size(496, 17);
+            this.tslHint.Text = "Tip: Presiona Tab para autocompletar un ejemplo. Pulsa F11 para pantalla completa, Esc para salir.";
             // 
             // Form1
             // 
@@ -171,11 +176,12 @@
             this.Controls.Add(this.txtExpresion);
             this.Controls.Add(this.lblInstruccion);
             this.Controls.Add(this.panelHeader);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
+            this.MaximizeBox = true;
+            this.MinimumSize = new System.Drawing.Size(740, 360);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Ejercicio 3 • Pila de paréntesis";
+            this.Text = "Ejercicio3 • Pila de paréntesis";
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
             this.statusStrip1.ResumeLayout(false);

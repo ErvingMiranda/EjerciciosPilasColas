@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ParentesisBalanceados",
+    "\\PilaPalabras"
   ],
-  "SelectedNode": "\\ParentesisBalanceados.sln",
+  "SelectedNode": "\\ParentesisBalanceados\\ParentesisBalanceados.sln",
   "PreviewInSolutionExplorer": false
 }

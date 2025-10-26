@@ -81,7 +81,7 @@
             this.lblInstruccion.Name = "lblInstruccion";
             this.lblInstruccion.Size = new System.Drawing.Size(355, 19);
             this.lblInstruccion.TabIndex = 1;
-            this.lblInstruccion.Text = "Ingresa una palabra y presiona Agregar:";
+            this.lblInstruccion.Text = "Ingresa una palabra y presiona Agregar (Enter habilitado):";
             // 
             // lblContador
             // 
@@ -201,7 +201,7 @@
             // 
             this.tslHint.Name = "tslHint";
             this.tslHint.Size = new System.Drawing.Size(374,17);
-            this.tslHint.Text = "Puedes presionar Enter para Agregar. Máximo 5 palabras en la pila.";
+            this.tslHint.Text = "Puedes presionar Enter para Agregar. Máximo5 palabras en la pila.";
             // 
             // Form1
             // 

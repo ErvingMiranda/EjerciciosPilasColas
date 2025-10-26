@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PilaPalabras")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e0d16893d8d91d141d7c8abae1cd18f6576b243")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+011710ec83507bd6ad4fa7501fac45e1bab27aaf")]
 [assembly: System.Reflection.AssemblyProductAttribute("PilaPalabras")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PilaPalabras")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
