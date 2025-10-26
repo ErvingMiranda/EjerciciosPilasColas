@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ervin\\source\\repos\\ErvingMiranda\\EjerciciosPilasColas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B4636E31-DD50-4ECE-B312-175EA01D854C}|ParentesisBalanceados.csproj|c:\\users\\ervin\\source\\repos\\ervingmiranda\\ejerciciospilascolas\\pilapalabras\\obj\\release\\net8.0-windows\\pilapalabras.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4636E31-DD50-4ECE-B312-175EA01D854C}|ParentesisBalanceados.csproj|solutionrelative:pilapalabras\\obj\\release\\net8.0-windows\\pilapalabras.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PilaPalabras.AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\ervin\\source\\repos\\ErvingMiranda\\EjerciciosPilasColas\\PilaPalabras\\obj\\Release\\net8.0-windows\\PilaPalabras.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "PilaPalabras\\obj\\Release\\net8.0-windows\\PilaPalabras.AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\ervin\\source\\repos\\ErvingMiranda\\EjerciciosPilasColas\\PilaPalabras\\obj\\Release\\net8.0-windows\\PilaPalabras.AssemblyInfo.cs",
+              "RelativeToolTip": "PilaPalabras\\obj\\Release\\net8.0-windows\\PilaPalabras.AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T21:18:06.564Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
